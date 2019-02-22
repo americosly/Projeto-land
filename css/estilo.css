@@ -11,6 +11,7 @@ body{
 header {
     box-shadow: 0 5px 8px #00000014;
     padding: 10px;
+    background-color: #fff;
 }
 
 header div{
@@ -122,4 +123,48 @@ footer{
     text-align: center;
     font-size: 16;
     padding: 20px;
+    
 }
+/* contact */
+
+#contact h1{
+    text-align: center;
+}
+
+#contact input:not([type="checkbox"]),
+#contact textarea{
+    width: 100%;
+    border: 1px solid #5f4a90;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color:transparent;
+}
+#contact textarea{
+    height: 100px;
+}
+
+#contact button{
+    background-color: #5f4a90;
+    border: 1px solid #5f4a90;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+    float: right;
+}
+.pagina-contato{
+    background-image: url("../imagens/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+form#contact{
+    border: 1px solid #5f4a90;
+    padding: 40px;
+    width: 550px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    }

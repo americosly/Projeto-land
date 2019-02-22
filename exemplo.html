@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exemplo tag semantica</title>
 </head>
+
 <body>
-    <p>Lorem <strong> ipsum dolor</strong>, sit amet consectetur adipisicing elit. Nobis, eos. Ipsa quasi vel fuga maxime fugit dolorem. Magnam, repellendus recusandae quisquam nisi quod, alias consequatur reiciendis eos aperiam voluptatum itaque?</p>
-    <p><cite>Lorem </cite> ipsum dolor, sit amet consectetur <em> adipisicing elit. Nobis, eos.</em> Ipsa quasi vel fuga maxime fugit dolorem. Magnam, repellendus recusandae quisquam nisi quod, alias consequatur reiciendis eos aperiam voluptatum itaque?</p>
-    <p> <mark> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </mark> Nobis, eos. Ipsa quasi vel fuga maxime fugit dolorem. Magnam, repellendus recusandae quisquam nisi quod, alias consequatur reiciendis eos aperiam voluptatum itaque?</p>
-    
+    <p>Lorem
+        <strong> ipsum dolor</strong>, sit amet consectetur adipisicing elit. Nobis, eos. Ipsa quasi vel fuga maxime fugit dolorem.
+        Magnam, repellendus recusandae quisquam nisi quod, alias consequatur reiciendis eos aperiam voluptatum itaque?</p>
+    <p>
+        <cite>Lorem </cite> ipsum dolor, sit amet consectetur
+        <em> adipisicing elit. Nobis, eos.</em> Ipsa quasi vel fuga maxime fugit dolorem. Magnam, repellendus recusandae quisquam
+        nisi quod, alias consequatur reiciendis eos aperiam voluptatum itaque?</p>
+    <p>
+        <mark> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </mark> Nobis, eos. Ipsa quasi vel fuga maxime fugit dolorem.
+        Magnam, repellendus recusandae quisquam nisi quod, alias consequatur reiciendis eos aperiam voluptatum itaque?</p>
+
+    <hr/>
+
+    <h2>Exemplo de formulário</h2>
+    <form action="">
+        <label for="pass">Password</label>
+        <br/>
+        <input type="password" name="pass" placeholder="Digite sua senha" id="pass" required>
+        <br/>
+        <br/>
+        <label for="curso">Curso</label>
+        <br/>
+        <input type="radio" name="curso" id="fullstack" value="Full stack"/>
+        <label for="fullstack">Full Stack</label><br/>
+        <input type="radio" name="curso" id="marketing" value="marketing"/>
+        <label for="marketing">Marketing</label>
+        <br/>
+        <br/>
+        <label for="diaSemana">Dias da Semana:</label><br/>
+        <input type="checkbox" name="diaSemana[]" id="segunda" value="Segunda-feira" checked>
+        <label for="segunda">Segunda-feira</label>
+        <br/>
+        <input type="checkbox" name="diaSemana[]" id="terca" value="Terça-feira">
+        <label for="terca">Terça-feira</label>
+        <br/>
+        <input type="checkbox" name="diaSemana[]" id="quarta" value="Quarta-feira">
+        <label for="quarta">Quarta-feira</label>
+        <br/>
+        <br/>
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option selected disabled>Selecione um País</option>></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Russia">Russia</option>
+            <option value="Argentina">Argentina</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="mensagem">Mensagem</label><br/>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <br/>
+        <br/>
+        <button type="submit">Enviar</button>
+    </form>
+
 </body>
 </html>

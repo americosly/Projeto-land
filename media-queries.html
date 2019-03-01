@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media-query</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            background-color: darkcyan;
+            padding: 10px;
+            display: inline-block;
+            width: 49%;
+        }
+        .box2 {
+            background-color: red;
+            padding: 10px;
+            display: inline-block;
+            width: 49%;
+        }
+
+        @media (max-width: 500px) { /* aqui estou colocando regras na pagina para ficar responsivo para mobile */
+           /* body {
+                background-color: brown;
+           } */
+
+           .box, .box2 {
+               display: block;
+               width: 100%;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@Media</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ut molestiae deserunt cumque quam, quas expedita
+            possimus eos ad laboriosam minus incidunt adipisci. Laborum hic maiores harum enim quod alias?
+        </p>
+    </div>
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore minus iusto, odit hic necessitatibus saepe
+            maiores, facilis atque id rem corrupti ducimus? Repellat explicabo voluptatibus, illum quae officiis ducimus.
+        </p>
+    </div>
+</body>
+
+</html>

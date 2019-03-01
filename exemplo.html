@@ -6,6 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exemplo tag semantica</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input {
+            background-color: darkgray;
+        }
+
+        input:focus {
+            background-color: aqua;
+        }
+
+        input:hover {
+            background-color: yellow;
+        }
+
+        .container {
+            border: 3px solid black;
+        }
+
+        .um {
+            background-color: black;
+            display: inline-block;
+            padding: 20px;
+            width: 50%;
+        }
+
+        .dois {
+            background-color: yellow;
+            display: inline-block;
+            padding: 20px;
+            width: 50%;
+        }
+
+        .tres {
+            background-color: red;
+            display: inline-block;
+            padding: 20px;
+            width: 50%;
+        }
+
+        .box{
+            margin: 30px;
+            height: 100px;
+            border:3px solid goldenrod;
+            overflow: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,13 +80,15 @@
         <br/>
         <label for="curso">Curso</label>
         <br/>
-        <input type="radio" name="curso" id="fullstack" value="Full stack"/>
-        <label for="fullstack">Full Stack</label><br/>
-        <input type="radio" name="curso" id="marketing" value="marketing"/>
+        <input type="radio" name="curso" id="fullstack" value="Full stack" />
+        <label for="fullstack">Full Stack</label>
+        <br/>
+        <input type="radio" name="curso" id="marketing" value="marketing" />
         <label for="marketing">Marketing</label>
         <br/>
         <br/>
-        <label for="diaSemana">Dias da Semana:</label><br/>
+        <label for="diaSemana">Dias da Semana:</label>
+        <br/>
         <input type="checkbox" name="diaSemana[]" id="segunda" value="Segunda-feira" checked>
         <label for="segunda">Segunda-feira</label>
         <br/>
@@ -58,12 +109,26 @@
         </select>
         <br/>
         <br/>
-        <label for="mensagem">Mensagem</label><br/>
+        <label for="mensagem">Mensagem</label>
+        <br/>
         <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
         <br/>
         <br/>
         <button type="submit">Enviar</button>
     </form>
+    <hr/>
+    <h2>Exemplo Display</h2>
 
+    <div class="container">
+        <span class="um">1</span>
+        <span class="dois">2</span>
+        <span class="tres">3</span>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nobis distinctio, cupiditate nesciunt vel laboriosam? Iure dolor dicta impedit ut ullam fuga, veritatis, accusamus optio voluptatum omnis nam eum facere?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nobis distinctio, cupiditate nesciunt vel laboriosam? Iure dolor dicta impedit ut ullam fuga, veritatis, accusamus optio voluptatum omnis nam eum facere?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nobis distinctio, cupiditate nesciunt vel laboriosam? Iure dolor dicta impedit ut ullam fuga, veritatis, accusamus optio voluptatum omnis nam eum facere?</p>
+    </div>
 </body>
+
 </html>

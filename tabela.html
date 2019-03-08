@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="csst.css">
+    <title>exemplos de tabelas</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+        }
+
+        th {
+            background-color:gray;
+            color: #fff;
+        }
+
+        tr:nth-child(odd) td {
+            color: black;
+            background-color: #ccc;
+        }
+        
+        h1::before {
+            content: " ";
+            background-image: url("imagens/table.png");
+            background-size: cover;
+            background-position: center;
+            width: 70px; 
+            height: 50px;
+            display: inline-block;    
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas - HTML</h1>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Curso</th>
+        </tr>
+        <tr>
+            <td>Américo Travassos</td>
+            <td>Full Steak</td>
+        </tr>
+        <tr>
+            <td>Ana Nicolau</td>
+            <td>Não consta</td>
+        </tr>
+        <tr>
+            <td>Américo Travassos</td>
+            <td>Full Steak</td>
+        </tr>
+        <tr>
+            <td>Ana Nicolau</td>
+            <td>Não consta</td>
+        </tr>
+        <tr>
+            <td>Américo Travassos</td>
+            <td>Full Steak</td>
+        </tr>
+        <tr>
+            <td>Ana Nicolau</td>
+            <td>Não consta</td>
+        </tr>
+
+    </table>
+
+    <hr>
+    <h2>Carrinho de Compras</h2>
+
+    <table>
+        <tr>
+            <th colspan="2">Produto</th>
+            <th>Qtd</th>
+            <th colspan="2">Preço</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Itens</td>
+            <td>Camiseta</td>
+            <td>5</td>
+            <td>$10</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>Calça</td>
+            <td>5</td>
+            <td>$10</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>Sapato</td>
+            <td>5</td>
+            <td>$10</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td colspan="2">$150</td>
+        </tr>
+    </table>
+</body>
+
+</html>
